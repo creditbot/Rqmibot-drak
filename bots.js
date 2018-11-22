@@ -675,28 +675,6 @@ client.on('message', function(message) {
 });
 
 
-
-
-
-client.on('ready', () => {
-  console.log('╔[══════════════════════════════════]╗');
-  console.log('')
-  console.log('            ╔[════════════]╗')
-  console.log('              Bot Is Online')
-  console.log('            ╚[════════════]╝')
-  console.log('')
-  console.log(`Logged in as ${client.user.tag}!`);
-  console.log('')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log('')
-  console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log('')
-  console.log('╚[════════════════════════════════════]╝')
-});
-
-
-
-
 client.on('message', message => {
 
 
@@ -1823,4 +1801,4 @@ client.on('message', message => {
 
 
 
-client.login("NTEzMzI0NTE1NTE0NjQ2NTM4.DthcyA.S7CWsE89VrlkwnaWYmk_7O0CSlA");
+client.login(process.env.BOT_TOKEN);
